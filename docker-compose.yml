@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  selectel-pgdocker:
+    image: schrodingerscat1/postgres_wiki
+    environment:
+      - POSTGRES_PASSWORD=selectel
+      - POSTGRES_USER=selectel
+      - POSTGRES_DB=selectel
+    ports:
+      - 5432:5432
+    networks:
+      - ODQANetwork
+    restart: always
+    volumes:
+      - ./postgresql:/var/lib/postgresql/data
+
+  web_odqa-container:
+    image: schrodingerscat1/web_odqa
+    networks:
+      - ODQANetwork
+    ports:
+      - 5000:5000
+
+networks:
+  ODQANetwork:

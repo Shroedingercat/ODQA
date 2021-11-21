@@ -1,0 +1,14 @@
+db:
+  user: "selectel"
+  host: "selectel-pgdocker"
+  password: "selectel"
+  port: "5432"
+  database: "selectel"
+
+retriever:
+  model: "./data/mDPR"
+  index: "./data/index/CORA_index_0"
+  n_jobs: 4
+
+reader:
+  model: "mrm8488/distilbert-multi-finetuned-for-xqua-on-tydiqa"
