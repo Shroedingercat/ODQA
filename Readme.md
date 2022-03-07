@@ -1,5 +1,5 @@
 ## Cross-lingual Open domain question answering
-Cross-lingual Open domain question answering web demo. We are 2000000 articles from the English wikipedia on the first hundred tokens
+Cross-lingual Open domain question answering web demo. We are using 2000000 articles from the English wikipedia on the first hundred tokens
 ### Requirements
 Docker
 `apt get install docker `
